@@ -1,4 +1,4 @@
-export default function(type, title, action) {
+export default function(type, id, action) {
   let request = new XMLHttpRequest();
 
   request.onreadystatechange = () => {
@@ -7,6 +7,6 @@ export default function(type, title, action) {
     }
   }
 
-  request.open('GET', type + '/' + title + '.md', true);
+  request.open('GET', type + '/' + id + '.md', true);
   request.send();
 };

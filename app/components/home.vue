@@ -4,7 +4,7 @@
     li.articles-list__item(v-for="article of articles | orderBy 'id' -1")
       .articles-list__date {{ article.date | formattedDate }}
       .articles-list__title
-        a.articles-list__link(v-link="{ name: 'article', params: { title: article.title }}") {{article.title}}
+        a.articles-list__link(v-link="{ name: 'article', params: { id: article.id }}") {{article.title}}
 </template>
 <script>
   import articles from '../data/articles.json'

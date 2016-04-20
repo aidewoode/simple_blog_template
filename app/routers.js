@@ -8,7 +8,7 @@ export default function(router) {
       component: homeComponent
     },
 
-    '/articles/:title': {
+    '/articles/:id': {
       name: 'article',
       component: articleComponent
     }

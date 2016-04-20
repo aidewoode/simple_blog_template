@@ -14,7 +14,7 @@
       data(transition) {
         this.startLoading();
 
-        fetch('articles', this.$route.params.title, (response) => {
+        fetch('articles', this.$route.params.id, (response) => {
           transition.next({ article: marked(response) });
           this.stopLoading();
         });

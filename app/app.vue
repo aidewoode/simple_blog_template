@@ -30,6 +30,10 @@
 
     components: {
       'loader': loader
+    },
+
+    created() {
+      document.title = this.config.blogName
     }
   }
 </script>
